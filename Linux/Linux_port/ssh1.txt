@@ -1,0 +1,27 @@
+
+
+
+
+1.What is the version of SSH server.
+Ans. nmap -sV 10.0.1.22
+
+2.Fetch the banner using netcat and check the version of SSH server.
+Ans. nc 10.0.1.22 22
+
+3.Fetch pre-login SSH banner.
+Ans. ssh root@10.0.1.22
+
+4.How many “encryption_algorithms” are supported by the SSH server.
+Ans.nmap -T4 --script=ssh2-enum-algos 10.0.1.22
+
+5.What is the ssh-rsa host key being used by the SSH server.
+Ans. nmap -T4 --script=ssh-hostkey --script-args ssh_hostkey=full 10.0.1.22
+ 
+6.Which authentication method is being used by the SSH server for user “student”.
+Ans. nmap -p 22 --script ssh-auth-methods --script-args="ssh.user=student" 10.0.1.22
+
+7.Which authentication method is being used by the SSH server for user “admin”.
+Ans. nmap -p 22 --script ssh-auth-methods --script-args="ssh.user=admin" 10.0.1.22
+
+8.Fetch the flag from /home/student/FLAG by using nmap ssh-run script.
+
