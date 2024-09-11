@@ -1,0 +1,54 @@
+
+Q1. Which web server software is running on the target server and also find out the
+version using nmap.
+Answer: Apache 2.4.18
+Command: nmap -sV -script banner 192.30.247.3
+
+
+Q2. Which web server software is running on the target server and also find out the
+version using suitable metasploit module.
+Answer: Apache 2.4.18
+Commands: msfconsole
+use auxiliary/scanner/http/http_version
+set RHOSTS 192.30.247.3
+exploit
+
+
+Q3. Check what web app is hosted on the web server using curl command.
+Answer: Apache default page
+Command: curl http://192.30.247.3/
+
+
+Q4.Check what web app is hosted on the web server using wget command.
+Answer: Apache default page
+Command: wget “http://192.30.247.3/index”
+
+Q5. Check what web app is hosted on the web server using browsh CLI based browser.
+Answer: Apache default page
+Command: browsh --startup-url 192.30.247.3
+
+Q6. Check what web app is hosted on the web server using lynx CLI based browser.
+Answer: Apache default page
+Command: lynx http://192.30.247.3
+
+Q7. Perform bruteforce on webserver directories and list the names of directories found.
+Use brute_dirs metasploit module.
+Answer: dir, src
+Commands:
+use auxiliary/scanner/http/brute_dirs
+set RHOSTS 192.30.247.3
+exploit
+
+Q8. Use the directory buster (dirb) with
+tool/usr/share/metasploit-framework/data/wordlists/directory.txt dictionary to check if
+any directory is present in the root folder of the web server. List the names of found
+directories.
+Answer: data, dir
+Commands: dirb http://192.30.247.3
+/usr/share/metasploit-framework/data/wordlists/directory.txt
+
+Q9. Which bot is specifically banned from accessing a specific directory?
+Answer: BadBot
+Commands: use auxiliary/scanner/http/robots_txt
+set RHOSTS 192.30.247.3
+run

