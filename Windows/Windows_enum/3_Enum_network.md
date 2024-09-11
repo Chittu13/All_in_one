@@ -1,4 +1,4 @@
-# Enumberating Network Information
+# Enumerating Network Information
 
 ### In windows 
   - __`ipconfig` it will display the network adapters for more use `ipconfig /all`__
