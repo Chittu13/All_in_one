@@ -102,19 +102,7 @@
 - ```objbump -d executablefile``` it will show the assembly code of the file
 
 ## OSINT <a name="osint"></a>
-- To find the user in the internet use this tool called sherlock
-```bash
-# clone the repo
-$ git clone https://github.com/sherlock-project/sherlock.git
-
-# change the working directory to sherlock
-$ cd sherlock
-
-# install the requirements
-$ python3 -m pip install -r requirements.txt
-$ python3 sherlock user123
-```
-
+- To find the user in the internet use this tool called [sherlock]()
 
 ## PWD <a name="pwd"></a>
 
