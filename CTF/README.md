@@ -79,25 +79,8 @@
 
 ## Cryptography <a name="crypto"></a>
 1. This is [Hill Cipher](https://www.dcode.fr/hill-cipher), see how it works or use an online decoder
-```
--------------------------
-|76 |101|115|116|101|114|
--------------------------
-|32 |83 |97 |110|100|101|
--------------------------
-|114|115|32 |115|104|111|
--------------------------
-|117|108|100|32 |104|101|
--------------------------
-|108|112|32 |121|111|117|
--------------------------
-|32 |58 |41 |41 |41 |42 |
--------------------------
+   - __[Reference](https://github.com/Chittu13/All_in_one/tree/main/CTF/cryptography/hill.md)__
 
-KLZCOUKTVOUWUKDOBGZVJIIIRGVHXCRQUCNOX_IBBL 
-```
-![image](https://github.com/Chittu13/CTF/blob/main/image/hill_cipher.png)
-  - flag ```CTF{BTW_EXISTS_AN_INTERESTING_FILM_ABOUT_HILLS}```
 2. Replace small letters with A, capital letters with B
     - ```BA BAAB AAABABAAAAABB AAA BBBBAA BBABAAA BA ABBABAAAB AABAAAA AB AAAAAA AABABB BBAABBABBAABA```
     - [bacon-cipher](https://www.dcode.fr/bacon-cipher)
