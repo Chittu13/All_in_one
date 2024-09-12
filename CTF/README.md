@@ -11,10 +11,10 @@
 
 ## Steganography <a name="stenography"></a>
 
-- ```file image.png```
+
 - ```steghide --extract -sf image.jpg -p <password>```
 - ```stegcracker imag.png /usr/share/wordlists/rockyou.txt```
-
+- ```file image.png```
 - ```strings image.png```
 - ```pngcheck image.png```
   - __If you are getting error then use below command__
