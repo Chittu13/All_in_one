@@ -11,14 +11,13 @@
 
 ## Steganography <a name="stenography"></a>
 
-
+- ```file image.png```
+- - ```strings image.png```
 - ```steghide --extract -sf image.jpg -p <password>```
 - ```stegcracker imag.png /usr/share/wordlists/rockyou.txt```
-- ```file image.png```
-- ```strings image.png```
 - ```pngcheck image.png```
-  - __If you are getting error then use below command__
-  - __`foremost image.png`__ ---> to recover the original image
+  - If you are getting error then use below command
+  - __`foremost image.png` ---> to recover the original image__
 - ```sudo apt install libimage-exiftool-perl -y```
   - ```exiftool image.png```
   - ```eog image.png```
