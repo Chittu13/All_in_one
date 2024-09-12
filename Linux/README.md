@@ -1,7 +1,7 @@
 
 
 
-[Interactive shell Update](./Important/update_interactive_shell.md)
+[Interactive shell Update](/Linux/Important/update_interactive_shell.md)
 
 ### tmux (Terminal Multiplexer) is a handy tool in Kali Linux for managing multiple terminal sessions within a single window
 - __type `tmux`__
