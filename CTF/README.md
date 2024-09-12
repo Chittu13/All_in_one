@@ -1,5 +1,5 @@
 # CTF 2.0
-- [Hints](/Important.md)
+- [Hints](CTF/Important.md)
 - [Steganography](#stenography)
   - [Steganography audio](#stenographyaudio)
 - [Web](#web)
