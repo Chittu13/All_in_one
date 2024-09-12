@@ -109,23 +109,7 @@ KLZCOUKTVOUWUKDOBGZVJIIIRGVHXCRQUCNOX_IBBL
 - ```strings flag.zip | grep -i cit | sort | uniq -u```
   - Given zip file was numerous directories with a flag.txt
 - A simple script to converts the RGB values of each pixel into characters
-```python
- from PIL import Image
-import numpy as np
-
-image_path = './secret_square.png'
-img = Image.open(image_path).convert('RGB')
-
-pixels = np.array(img)
-print(pixels.shape)
-
-sums = np.sum(pixels, axis=2)
-print(sums.shape)
-
-for row in sums:
-    print(''.join([chr(x) for x in row]))
-```
-
+  - [Script](https://github.com/Chittu13/All_in_one/tree/main/CTF/Codes)
 ## Reverse Engineering <a name="rev"></a>
 - ```ltrace ./filename```
   - The file is executable_file so we use ./filename
