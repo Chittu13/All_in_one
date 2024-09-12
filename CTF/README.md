@@ -52,30 +52,8 @@
 - redacted text (cover with block) in a given pdf
   - ```pdftotext file.pdf``` or ```pdftohtml  file.pdf```
 - suspicious space and tabs in a given text file
-![image](https://github.com/Chittu13/CTF/blob/main/image/space_tab.png)
-  - python script to extract and convert from binary to ASCII and get  the flag.
-``` python
-def extract_and_convert(file_path):
-    with open(file_path, 'rb') as file:
-        data = file.read()
+  - __[python](https://github.com/Chittu13/All_in_one/blob/main/CTF/Codes/space.md)__ script to extract and convert from binary to ASCII and get  the flag.
 
-    result = ''
-    for byte in data:
-        if byte == 0x09:  // Tab character
-            result += '0'
-        elif byte == 0x20:  // Space character
-            result += '1'
-    
-    return result
-
-file_path = 'the_cs_dictionary.txt'
-
-binary_string = extract_and_convert(file_path)
-
-n = int(binary_string, 2)
-print(n.to_bytes((n.bit_length() + 7) // 8, 'big').decode())
-
-```
 ## Steganography audio <a name="stenographyaudio"></a>
 - [Morsecode](https://morsecode.world/international/decoder/audio-decoder-adaptive.html)
 - [stegolsb](https://github.com/ragibson/Steganography.git)
