@@ -102,7 +102,7 @@
 - ```objbump -d executablefile``` it will show the assembly code of the file
 
 ## OSINT <a name="osint"></a>
-- To find the user in the internet use this tool called [sherlock]()
+- To find the user in the internet use this tool called [sherlock](https://github.com/Chittu13/All_in_one/blob/main/CTF/Tools/sherlock.md)
 
 ## PWD <a name="pwd"></a>
 
