@@ -1,5 +1,5 @@
 
-__To use this script you need to have access to the target system__
+__You require elevated privileges in order to establish persistence on a Windows system.__
 - __`search persistence_service`__
   - __`use exploit/windows/local/persistence_service`__
   - __remember the `LPORT` because we use same port to login__
