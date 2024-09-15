@@ -11,7 +11,7 @@
      
 
  # sudo -l
-- __1.root) NOPASSWD: /usr/bin/man__
+- __1.(root) NOPASSWD: /usr/bin/man__
     - __Type this `sudo man ls` it will display document of the ls__
     - __In the document itself `type !/bin/bash` you will get the root shell__
     - __To read the content of the file you can use `man <file_name>`__
