@@ -9,3 +9,6 @@
   - __`scp admin@10.0.1.22:~/Desktop/id_rsa .`__
 
  - __[Cron Job](https://github.com/Chittu13/All_in_one/blob/main/Linux/Linux_Persistence/README.md)__
+
+
+- __[CyberChef](https://cyberchef.org/) is a online tool for encode and decode__
