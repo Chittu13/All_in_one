@@ -1,7 +1,7 @@
 
 
-- __`https://test.com/?redirect=
-
+- __`https://test.
+  
 # Cross-Site Scripting (XSS)
 
 - __`/?name=">test123`__
