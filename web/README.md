@@ -1,3 +1,7 @@
+
+[bug-bounty-dorks](https://github.com/sushiwushi/bug-bounty-dorks)
+
+
 # Open redirect
 
 - __`https://test.com/?redirect=https://www.google.com`__
